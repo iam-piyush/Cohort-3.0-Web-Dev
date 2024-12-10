@@ -1,0 +1,217 @@
+body {
+    background-color: #0D1116;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+nav{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.branding img{
+    height: 25px;
+}
+
+.branding p{
+    color: white;
+    opacity: 0.9;
+    margin: 0 10px;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0 10px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    opacity: 0.9;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    border-radius: 5px;
+}
+
+.right input{
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+.right input:focus{
+    background-color: transparent;
+    outline: none;
+    color: white;
+    opacity: 0.7;
+}
+
+.right svg{
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+}
+
+.menuBar img{
+    height: 20px;
+    display: none;
+}
+
+.right button{
+    padding: 7px 15px;
+    background-color: #0078D4;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.right button:hover{
+    background-color: #0069ba;
+    cursor: pointer;
+}
+
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.hero{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero h1{
+    font-size: 68px;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.hero h2{
+    font-weight: 300;
+    opacity: 0.7;
+    width: 700px;
+    margin: 10px auto;
+    line-height: 1cm;
+}
+
+.hero_buttons button{
+    font-size: medium;
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+
+#button1{
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#button2{
+    background-color: #27292E;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.334);
+    border-radius: 5px;
+}
+
+.hero_img{
+    margin-top: 50px;
+}
+
+.hero_img img{
+    width: 1300px;
+}
+
+@media screen and (max-width: 1350px){
+    .hero_img img{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1090px){
+    .menuBar img{
+        display: block;
+    }
+    .input, .right button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .hero_img img{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .hero_img img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .menu{
+        display: none;
+    }
+    .hero h1{
+        font-size: 48px;
+    }
+    .hero h2{
+        font-size: 18px;
+        width: 600px;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero h2{
+        font-size: 14px;
+        width: 350px;
+    }
+    .hero_img img{
+        width: 350px;
+    }
+}

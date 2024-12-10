@@ -1,0 +1,1 @@
+Hello there I am the text from the example2.txt file and I am being read asynchronously.
